@@ -2,10 +2,8 @@
 
 import json
 import urllib.request
-import prettytable
 
 # Create a function printResults to store parsed json using 'loads' method using features found in json key value pair data from usgs website
-
 
 def printResults(data):
 
@@ -28,7 +26,6 @@ def printResults(data):
 
 # Main function to load url data from usgs website
 
-
 def main():
 
     urldata = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson"
@@ -49,9 +46,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-x = prettytable()
-
-x.field_names(["properties"]["mag"], ["features"]["place"])
-
-print(x)
